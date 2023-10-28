@@ -5,6 +5,9 @@ for (let i = 1; i <=100; i++) {
   cell.classList.add("cell");
   cell.textContent = i;
   gridElem.appendChild(cell).addEventListener("click",change);
+  cell.addEventListener("click", function() {
+    console.log(i);
+  })
 }
 console.log(gridElem);
 
